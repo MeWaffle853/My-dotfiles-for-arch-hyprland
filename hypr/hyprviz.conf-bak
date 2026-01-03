@@ -1,0 +1,16 @@
+# hyprviz configuration (created automatically)
+
+general {
+    gaps_in = 6
+    gaps_out = 6
+   #no_border_on_floating = false
+
+    snap {
+        enabled = false
+    }
+
+}
+
+decoration {
+    rounding = 4
+}

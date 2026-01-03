@@ -1,0 +1,46 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": 0,
+  "spacing": 5,
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["custom/wordclock"],
+  "modules-right": ["pulseaudio", "memory", "cpu", "battery", "network", "tray"],
+  "sway/workspaces": {
+    "all-outputs": true,
+    "disable-scroll": false
+  },
+  "clock": {
+    "format": "%a %b %d | %H:%M",
+    "tooltip-format": "%A, %d %B %Y"
+  },
+  "pulseaudio": {
+    "format": "{volume}% 🔊",
+    "format-muted": "MUTED 🔇"
+  },
+  "memory": {
+    "format": "RAM: {used}/{total}MB"
+  },
+  "cpu": {
+    "format": "CPU: {usage}%"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": {
+      "charging": "⚡",
+      "full": "🔋"
+    }
+  },
+  "network": {
+    "interface": "wlan0",
+    "format-up": "{essid} {ipaddr}",
+    "format-down": "Disconnected"
+  },
+  "tray": {}
+}
+
+
+"custom/wordclock": {
+    "exec": "~/.config/waybar/word_clock.sh",
+    "interval": 60
+}

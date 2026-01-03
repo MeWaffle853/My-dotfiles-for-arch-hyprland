@@ -1,0 +1,64 @@
+/* Waybar base */
+#waybar {
+    background-color: rgba(30, 30, 46, 0.8);
+    border-bottom: 1px solid rgba(99, 119, 248, 0.3);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    padding: 2px 0;
+}
+
+/* Workspaces */
+#sway-workspaces button {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    margin: 0 2px;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+#sway-workspaces button.active {
+    background-color: #f5c2e7;
+    color: #1e1e2e;
+}
+
+/* Mode */
+#sway-mode {
+    background-color: #313244;
+    color: #cdd6f4;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+/* Clock */
+#clock {
+    color: #cdd6f4;
+    font-weight: bold;
+}
+
+/* Right-side modules */
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio {
+    background-color: #313244;
+    color: #cdd6f4;
+    margin: 0 3px;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+/* Tray */
+#tray button {
+    margin: 0 3px;
+}
+
+/* Hover */
+button:hover {
+    background-color: #585b70;
+    color: #f5c2e7;
+}
+#custom-wordclock {
+    color: #cdd6f4;
+    font-weight: bold;
+}
